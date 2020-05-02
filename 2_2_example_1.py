@@ -12,39 +12,39 @@ x_is_odd, y_is_odd, z_is_odd = (x % 2 != 0), (y % 2 != 0), (z % 2 !=0)
 
 # no odds
 if not x_is_odd and not y_is_odd and not z_is_odd:
-	print("There are no odds.")
+  print("There are no odds.")
 # x is only odd
 elif x_is_odd and not y_is_odd and not z_is_odd:
-	print(str(x) + " is the largest odd.")
+  print(str(x) + " is the largest odd.")
 # y is only odd
 elif not x_is_odd and y_is_odd and not z_is_odd:
-	print(str(y) + " is the largest odd.")
+  print(str(y) + " is the largest odd.")
 # z is only odd
 elif not x_is_odd and not y_is_odd and z_is_odd:
-	print(str(z) + " is the largest odd.")
+  print(str(z) + " is the largest odd.")
 # x and y are odd
 elif x_is_odd and y_is_odd and not z_is_odd:
-		if x > y:
-			print(str(x) + " is the largest odd.")
-		else:
-			print(str(y) + " is the largest odd.")
+    if x > y:
+      print(str(x) + " is the largest odd.")
+    else:
+      print(str(y) + " is the largest odd.")
 # y and z are odd
 elif not x_is_odd and y_is_odd and z_is_odd:
-		if y > z:
-			print(str(y) + " is the largest odd.")
-		else:
-			print(str(z) + " is the largest odd.")
+    if y > z:
+      print(str(y) + " is the largest odd.")
+    else:
+      print(str(z) + " is the largest odd.")
 # x and z are odd
 elif x_is_odd and not y_is_odd and z_is_odd:
-		if x > z:
-			print(str(x) + " is the largest odd.")
-		else:
-			print(str(z) + " is the largest odd.")
+    if x > z:
+      print(str(x) + " is the largest odd.")
+    else:
+      print(str(z) + " is the largest odd.")
 # x and y and z are odd
 else:
-	if x >= y and x >= z:
-		print(str(x) + " is the largest odd.")
-	elif y >= x and y >= z:
-		print(str(y) + " is the largest odd.")
-	else:
-		print(str(z) + " is the largest odd.")
+  if x >= y and x >= z:
+    print(str(x) + " is the largest odd.")
+  elif y >= x and y >= z:
+    print(str(y) + " is the largest odd.")
+  else:
+    print(str(z) + " is the largest odd.")
